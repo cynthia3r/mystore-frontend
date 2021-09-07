@@ -4,8 +4,8 @@ export class CustomerData {
   creditCardNumber: string;
 
   constructor() {
-      this.fullname = "";
-      this.address = "";
-      this.creditCardNumber = "";
+      this.fullname = '';
+      this.address = '';
+      this.creditCardNumber = '';
   }
 }

@@ -4,14 +4,21 @@ export class Product {
   price: number;
   url: string;
   description: string;
+
+  constructor() {
+    this.id = 0;
+    this.name = '';
+    this.price = 0;
+    this.url = '';
+    this.description = '';
+  }
+}
+
+export class CartProduct extends Product{
   quantity: number;
 
   constructor() {
-      this.id = 0;
-      this.name = "";
-      this.price = 0;
-      this.url = "";
-      this.description = "";
-      this.quantity = 0;
+    super();
+    this.quantity = 0;
   }
 }
