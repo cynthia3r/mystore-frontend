@@ -1,9 +1,8 @@
 # MyStore
 
 MyStore is a single-page e-commerce application created using Angular to offer a rich, dynamic experience to the users. The application allows users to view a list of available products to purchase, add them to a shopping cart, and ultimately complete the checkout process.
-  –
 ## MyStore Features and Functionality
-The application reflects the same user experience as that of a real-world e-commerce website including
+The application reflects the same user experience as that of a real-world e-commerce website, including
 * **Product list** page, which displays the available products for the user to choose and add to their cart (in various quantities)
 * **Product details** page, which displays more information about any particular product
 * **Shopping cart**, which includes the products that the user has added to their cart
