@@ -14,6 +14,10 @@ The application reflects the same user experience as that of a real-world e-comm
 * `node.js` runtime
 * `npm` package manager
 * `Angular` framework. The project has been scaffolded using `Angular CLI`
+* `Angular Router` for navigation and routing
+* `RxJS` for state management
+* `HttpClientModule` for asynchronous calls
+* `TypeScript` for static typing
 
 ## Setup and build Instructions
 * Install dependencies using `npm install`
