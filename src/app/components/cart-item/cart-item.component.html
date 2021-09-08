@@ -1,0 +1,14 @@
+<div class="cart-item">
+  <div class="cart-item-details">
+    <img class="cart-item-image" alt="{{cartItem.name}}" src="{{cartItem.url}}">
+  </div>
+  <div>
+    <h4>{{cartItem.name}}</h4>
+    <p>$ {{cartItem.price}}</p>
+    <p>Quantity = {{quantity}}</p>
+
+    <form (ngSubmit)="removeItemFromCart()" #form="ngForm">
+      <button type="submit" class="btn btn-primary">Remove from Cart</button>
+    </form>
+  </div>
+</div>
