@@ -1,10 +1,10 @@
-export class CustomerData {
-  fullname: string;
+export class Customer {
+  fullName: string;
   address: string;
   creditCardNumber: string;
 
   constructor() {
-      this.fullname = '';
+      this.fullName = '';
       this.address = '';
       this.creditCardNumber = '';
   }

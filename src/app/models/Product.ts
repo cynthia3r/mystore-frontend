@@ -14,7 +14,7 @@ export class Product {
   }
 }
 
-export class CartProduct extends Product{
+export class CartItem extends Product{
   quantity: number;
 
   constructor() {
