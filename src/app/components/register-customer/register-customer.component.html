@@ -1,0 +1,19 @@
+<form (ngSubmit)="onSubmit()" #form="ngForm">
+  <div class="form-margin">
+    <label for="fullName">Full Name</label>
+    <input type="text" name="fullName" [(ngModel)]="customer.fullName" (ngModelChange)="customer.fullName = $event" minlength="6" placeholder="Enter minimum 3 characters" required>
+    <div class="error" *ngIf="!isNameValid">Name cannot have special characters</div>
+  </div>
+
+  <div class="form-margin">
+    <label for="address">Address</label>
+    <input type="text" name="address" [(ngModel)]="customer.address" (ngModelChange)="customer.address = $event" minlength="10" placeholder="Enter minimum 10 characters" required>
+  </div>
+
+  <div class="form-margin">
+    <label for="creditCard">Credit Card Number</label>
+    <input type="number" name="creditCardNumber" [(ngModel)]="customer.creditCardNumber" (ngModelChange)="customer.creditCardNumber = $event" min="1000000000000000" placeholder="Enter 16 digit number" required>
+  </div>
+
+  <button type="submit" [disabled]="form.invalid" class="btn btn-primary">Submit</button>
+</form>
