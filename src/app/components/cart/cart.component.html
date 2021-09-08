@@ -1,1 +1,22 @@
-<p>cart works!</p>
+<div class="cart-container" *ngIf="!success">
+  <div class="cart-panel" *ngIf="cart.length > 0">
+    <app-cart-item
+    *ngFor="let item of cart"
+    [cartItem]="item"
+    (removeFromCart)="removeItemFromCart($event)"
+    ></app-cart-item>
+    <h4>Total: ${{totalPrice}}</h4>
+  </div>
+
+  <div class="cart-panel" *ngIf="cart.length > 0">
+    <app-register-customer
+      (registerCustomerData)="registerCustomerDetails($event)"
+    ></app-register-customer>
+  </div>
+
+  <div class="empty-cart-message" *ngIf="cart.length === 0">
+    <p>Your shopping cart is empty!</p>
+    <br>
+    <a routerLink="" class="back-link">&lt;- Back to Product List</a>
+  </div>
+</div>
