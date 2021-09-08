@@ -41,7 +41,7 @@ export class CartService {
     this.cart.forEach(({ price, quantity }) => {
       totalPrice += price* quantity;
     });
-    return totalPrice;
+    return Math.round(totalPrice * 100) / 100;
   }
 
   constructor() { }
